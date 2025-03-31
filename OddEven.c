@@ -7,3 +7,4 @@ int main(int argc, char* argv[])
 }
 
 // goes from start to end by step and prints whether the numbers are even or odd
+// all only using a bodyless for lol
