@@ -7,4 +7,5 @@ int main(int argc, char* argv[])
 }
 
 // goes from start to end by step and prints whether the numbers are even or odd
-// all only using a bodyless for lol
+// all only using a bodyless for
+// no it doesn't go backwards I didn't really want to think about that, I probably could, but I won't, or maybe, idk
