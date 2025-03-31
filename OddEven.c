@@ -6,7 +6,7 @@ int main(int argc, char* argv[])
     (
         int input_start, input_limit, step, last_start,
         print = printf("<start> <end> <step>\n"),
-        code = scanf("%i%i%i", &input_start, &input_limit, &step),
+        scan = scanf("%i%i%i", &input_start, &input_limit, &step),
         start = input_start, limit = input_limit,
         boundsBottom = (input_limit - input_start > 0 && step <= 0) ? (start = limit + 1 ) : 0,
         boundsTop = (input_limit - input_start < 0 && step >= 0) ? (limit = start + 1 ) : 0;
