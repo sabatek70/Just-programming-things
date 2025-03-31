@@ -2,7 +2,26 @@
 
 int main(int argc, char* argv[])
 {
-    for(int input_start, input_limit, step, last_start, code = scanf("%d%d%d", &input_start, &input_limit, &step, printf("<start> <end> <step>\n")), start = input_start, limit = input_limit, a = printf("", (input_limit-input_start>0&&step<=0)?(start=limit+1):0, (input_limit-input_start<0&&step>=0)?(limit=start+1):0);(input_start<=input_limit)?(last_start = start, start<=limit):(last_start = start, limit<=start); printf("\n", (last_start%2==0)?printf("%d : even", last_start, start+=step):printf("%d : odd", last_start, start+=step)));
+    for
+    (
+        int input_start, input_limit, step, last_start,
+        print = printf("<start> <end> <step>\n"),
+        code = scanf("%i%i%i", &input_start, &input_limit, &step),
+        start = input_start, limit = input_limit,
+        boundsBottom = (input_limit - input_start > 0 && step <= 0) ? (start = limit + 1 ) : 0,
+        boundsTop = (input_limit - input_start < 0 && step >= 0) ? (limit = start + 1 ) : 0;
+    
+        (input_start <= input_limit)
+        ? (last_start = start, start<=limit)
+        : (last_start = start, limit<=start);
+    
+        printf
+        (   "\n%.i",
+            (last_start%2==0)
+            ? 0*printf("%d%.i: even", last_start, 0*(start+=step))
+            : 0*printf("%d%.i: odd", last_start, 0*(start+=step))
+        )
+    );
     return 0;
 }
 
