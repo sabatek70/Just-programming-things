@@ -1,16 +1,14 @@
 #include <stdio.h>
 
 struct {
-	struct {
-		int (*println)(const char* restrict, ...);  
-	} out;
-} System;
+   struct {
+      int (*printf)(const char* restrict, ...);
+   } out;
+} System = {&printf};
 
 int main()
 {
-	System.out.println = &printf;
+   System.out.printf("Hello, World! My favourite number is: %d.\n", 4);
 
-	System.out.println("Hello World?");
-
-	return 0;
+   return 0;
 }
