@@ -60,7 +60,7 @@ int main(int argc, char* argv[])
       {7, "Butter 100g", 5.99, 4},
       {8, "10 Eggs", 9.99, 6},
    };
-   wareLastID = shopWarehouse.size();
+   wareLastID = shopWarehouse.size() - 1;
 
 
    int option = CONTINUE;
@@ -211,7 +211,7 @@ int addWare(vector<struct ware>& warehouse) {
    warehouse.push_back({wareLastID, wareName, warePrice, wareQuantity});
 
    showWareWithTopBar(warehouse, findWare(warehouse, wareLastID));
-   cout << "Item with ID " << wareLastID << " has been successfully added";
+   cout << "Item with ID " << wareLastID << " has been successfully added" << endl;
    return SUCCESS;
 }
 
